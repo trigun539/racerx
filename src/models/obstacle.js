@@ -2,7 +2,7 @@ import { BoxGeometry, MeshLambertMaterial, Mesh, TextureLoader } from 'three'
 import { Randomize } from '../utils/general'
 import BluePrototype from '../images/blue-prototype.png'
 
-const LANES = [-1, 0, 1]
+const LANES = [-1.5, 0, 1.5]
 const BLOCK_COUNT = 40
 const COURSE_LENGTH = 30
 const COURSE_SPEED = 0.1
@@ -16,7 +16,7 @@ const material = new MeshLambertMaterial({
 const Z_POSITIONS = []
 
 for (let i = 0; i < COURSE_LENGTH; i++) {
-  Z_POSITIONS.push(i * -5)
+  Z_POSITIONS.push(i * -5 - 20) - 20
 }
 
 for (let i = 0; i < BLOCK_COUNT; i++) {

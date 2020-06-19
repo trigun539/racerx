@@ -10,8 +10,8 @@ import RedPrototype from '../images/red-prototype.png'
 
 const positions = {
   middle: { x: 0, y: 1 / 2, z: 3.1 },
-  left: { x: -1, y: 1 / 2, z: 3.1 },
-  right: { x: 1, y: 1 / 2, z: 3.1 }
+  left: { x: -1.5, y: 1 / 2, z: 3.1 },
+  right: { x: 1.5, y: 1 / 2, z: 3.1 }
 }
 const geometry = new BoxGeometry(1, 1, 1)
 const texture = new TextureLoader().load(RedPrototype)
